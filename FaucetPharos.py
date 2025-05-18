@@ -54,7 +54,7 @@ def progress_bar_animation(message, duration):
             sys.stdout.write(f'\r{Fore.YELLOW}{message} [{progress}] {i*5}%{Style.RESET_ALL}')
             sys.stdout.flush()
             time.sleep(duration / bar_length)
-    sys.stdout.write(f'\r{Fore.YELLOW}{message} [#{ '#' * bar_length}] 100% Done!{Style.RESET_ALL}\n')
+    sys.stdout.write(f'\r{Fore.YELLOW}{message} [{"#" * bar_length}] 100% Done!{Style.RESET_ALL}\n')
     sys.stdout.flush()
 
 def check_rpc_connection():
